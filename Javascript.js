@@ -59,8 +59,13 @@ console.log("Person 3:", persons[2].firstName);
 console.log("Age", persons[2].age);
 console.log("Likes", persons[2].hobbies);
 
-console.log(`all hobbies: ${persons[0].hobbies},
-${persons[1].hobbies},${persons[2].hobbies}`);
+/**console.log(`all hobbies: ${persons[0].hobbies},
+${persons[1].hobbies},${persons[2].hobbies}`);**/
+
+const allHobbies = persons[0].hobbies.concat(persons[1].hobbies,
+  persons[2].hobbies);
+
+console.log(allHobbies.join(", "));
 
 console.log("OPPGAVE 3:");
 
